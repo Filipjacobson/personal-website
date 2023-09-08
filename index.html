@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>hjalmar.tech</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+
+
+
+<script src="./js/main.js"></script>
+
+
+<body>
+  <!-- Vbar -->
+  <div class="vertical-bar"></div>
+  <!-- Hamburger -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div id="menuOverlay" class="overlay">
+    <div class="overlay-content">
+      <a href="/">Home</a>
+      <a href="./pages/manifesto.html">Manifesto</a>
+      <a href="./pages/about-us.html">About</a>
+      <a href="./pages/contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <!-- Body -->
+    <div class="container">
+
+      <h1>hjalmar.tech</h1>
+      <p>On the hunt for a Software Engineer? Look no further!</p>
+
+      <form id="myForm">
+        <input type="email" name="email" id="emailField" placeholder="Enter email address" required>
+        <input type="submit" value="Notify Me" class="button">
+        <p id="responseMessage"></p>
+      </form>
+      
+
+    </div>
+    
+   
+    <!-- Footer -->
+    <custom-footer></custom-footer>
+  </div>
+
+
+  
+</body>
+
+</html>
