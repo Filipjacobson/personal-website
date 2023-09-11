@@ -61,30 +61,3 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-
-class MyFooter extends HTMLElement {
-  connectedCallback(){
-    this.innerHTML = `
-      <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-col">
-                <h3>Company</h3>
-                <p>Filip Jacobson enskild näringsverksamhet</p>
-                <p>Innehar F-skattsedel / Holds corporate tax card</p>
-            </div>
-            <div class="footer-col">
-                <h3>About</h3>
-                <p>Consulting in data, BI, and integration</p>
-            </div>
-            <div class="footer-col">
-                <h3>Contact</h3>
-                <p><a href="mailto:filip@hjalmar.tech">filip@hjalmar.tech</a></p>
-            </div>
-        </div>
-    </footer>
-  `
-  }
-};
-
-customElements.define('custom-footer', MyFooter);
-
